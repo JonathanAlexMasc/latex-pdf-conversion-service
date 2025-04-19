@@ -1,0 +1,9 @@
+# docker-compose.yml
+version: '3'
+services:
+  latex-service:
+    image: latex-service
+    ports:
+      - "3001:3001"
+    env_file:
+      - .env
